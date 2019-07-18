@@ -16,8 +16,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - mocha test.js
-  post_build:
+   post_build:
     commands:
       - echo Build completed on `date`
 # Include only the files required for your application to run.
@@ -29,5 +28,4 @@ artifacts:
     - app.js
     - index.html
     - package.json
-    - node_modules/async/*
-    - node_modules/lodash/*
+    - models/*
