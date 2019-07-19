@@ -4,14 +4,10 @@ phases:
   install:
     runtime-versions:
       nodejs: 10  
-    commands:
-      - echo Installing Mocha...
-      - npm install -g mocha
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
       - npm install
-      - npm install unit.js
 artifacts:
   files:
     - app.js
